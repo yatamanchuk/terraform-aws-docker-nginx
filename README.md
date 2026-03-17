@@ -24,11 +24,8 @@ Terraform → AWS → EC2 → Docker → Nginx
 ### 1. Configure AWS CLI
 Make sure AWS CLI is installed and configured with your credentials:
 
-```bash
-
 ### 2. Initialize Terraform
 terraform init
-
 
 ### 3. Review Execution Plan
 terraform plan
