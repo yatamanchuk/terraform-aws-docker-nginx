@@ -37,7 +37,7 @@ Type yes when prompted.
 ### 5. Access Application
 Open in browser: http://"EC2-PUBLIC-IP"
 
-###6. Destroy Resources (Cleanup)
+### 6. Destroy Resources (Cleanup)
 terraform destroy
 
 ## Expected Output
