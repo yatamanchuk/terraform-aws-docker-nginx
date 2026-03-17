@@ -45,9 +45,9 @@ Nginx welcome page running from a Docker container on AWS EC2.
 
 ## Key Learning Outcomes
 - Infrastructure as Code with Terraform
-- Cloud resource provisioning in AWS
-- Containerized deployments using Docker
-- Automated server configuration with user-data scripts
+- Automated cloud infrastructure deployment using AWS APIs
+- Containerized application deployment with Docker
+- Automated server configuration using user-data scripts
 
 ## Future Improvements
 - Add CI/CD pipeline (GitHub Actions)
