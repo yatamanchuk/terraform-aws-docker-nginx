@@ -49,9 +49,9 @@ After deployment, SSH was used to connect to the EC2 instance and verify the run
 ### Connect to EC2
 bash
 ssh -i devops-key-ssh.pem ec2-user@<"EC2-PUBLIC-IP">
-# Verify Docker Container
+#### Verify Docker Container
 sudo docker ps
-# Test Web Server Internally
+#### Test Web Server Internally
 curl localhost
 
 ## Key Learning Outcomes
