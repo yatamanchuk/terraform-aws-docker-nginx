@@ -22,26 +22,32 @@ Terraform → AWS → EC2 → Docker → Nginx
 
 ## Deployment Steps
 ### 1. Configure AWS CLI
-aws configure
+Make sure AWS CLI is installed and configured with your credentials:
 
 ### 2. Initialize Terraform
 terraform init
 
-### 3. Deploy Infrastructure
-terraform apply
+### 3. Review Execution Plan
+terraform plan
 
-### 4. Access Application
-Open in browser:
-http://<EC2-PUBLIC-IP>
+### 4. Deploy Infrastructure
+terraform apply
+Type yes when prompted.
+
+### 5. Access Application
+Open in browser: http://<"EC2-PUBLIC-IP">
+
+### 6. Destroy Resources (Cleanup)
+terraform destroy
 
 ## Expected Output
 Nginx welcome page running from a Docker container on AWS EC2.
 
 ## Key Learning Outcomes
 - Infrastructure as Code with Terraform
-- Cloud resource provisioning in AWS
-- Containerized deployments using Docker
-- Automated server configuration with user-data scripts
+- Automated cloud infrastructure deployment using AWS APIs
+- Containerized application deployment with Docker
+- Automated server configuration using user-data scripts
 
 ## Future Improvements
 - Add CI/CD pipeline (GitHub Actions)
