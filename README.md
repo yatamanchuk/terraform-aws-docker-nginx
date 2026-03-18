@@ -43,6 +43,17 @@ terraform destroy
 ## Expected Output
 Nginx welcome page running from a Docker container on AWS EC2.
 
+## SSH Access & Verification
+After deployment, SSH was used to connect to the EC2 instance and verify the running services.
+
+### Connect to EC2
+bash
+ssh -i devops-key-ssh.pem ec2-user@<"EC2-PUBLIC-IP">
+Verify Docker Container
+sudo docker ps
+Test Web Server Internally
+curl localhost
+
 ## Key Learning Outcomes
 - Infrastructure as Code with Terraform
 - Automated cloud infrastructure deployment using AWS APIs
@@ -56,7 +67,6 @@ Nginx welcome page running from a Docker container on AWS EC2.
 - Use Terraform modules for scalability
 
 ## Screenshots
-
 ### EC2 Instance (Running)
 ![EC2](ec2-screenshot.png)
 
