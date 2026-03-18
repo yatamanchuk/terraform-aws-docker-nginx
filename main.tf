@@ -2,6 +2,7 @@ provider "aws" {
   region = "us-east-1"
 }
 
+
 resource "aws_security_group" "lab_sg" {
   name = "devops-lab-sg"
 
@@ -31,6 +32,8 @@ resource "aws_instance" "devops_lab" {
   ami           = "ami-0c02fb55956c7d316"
   instance_type = "t2.micro"
 
+key_name = "devops-key-ssh"
+
   vpc_security_group_ids = [aws_security_group.lab_sg.id]
 
 user_data = <<-EOF
@@ -39,7 +42,7 @@ user_data = <<-EOF
               amazon-linux-extras install docker -y
               systemctl start docker
               systemctl enable docker
-              sleep 10
+              sleep 15
               docker run -d -p 80:80 nginx
               EOF
 
