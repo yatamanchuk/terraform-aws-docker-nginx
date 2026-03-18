@@ -60,7 +60,7 @@ Nginx welcome page running from a Docker container on AWS EC2.
 ### EC2 Instance (Running)
 ![EC2](ec2-screenshot.png)
 
-###Nginx Web Server (Deployed via Docker)
+### Nginx Web Server (Deployed via Docker)
 ![Nginx](nginx-screenshot.png)
 
 ## Author
